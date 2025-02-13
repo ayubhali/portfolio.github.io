@@ -3,33 +3,273 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ayub Ali - Portfolio</title>
+    <title>Ayub Hussein Ali - Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
   </head>
   <body>
     <header>
-      <div class="logo">AA</div>
+      <div class="logo">
+        <a href="#home">AHA</a>
+      </div>
       <nav>
         <ul>
-          <li><a href="about.html">About</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="blog.html">Blog</a></li>
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
 
-    <section class="hero">
-      <h1 id="typing-text"></h1>
-      <p>
-        I'm a passionate frontend developer focused on creating beautiful and functional web experiences. 
-        I love building open-source software and contributing to the developer community.
-      </p>
-      <div class="social-links">
-        <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://linkedin.com/in/yourusername" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="https://twitter.com/yourusername" target="_blank"><i class="fab fa-twitter"></i></a>
+    <section id="home">
+      <div class="hero">
+        <h1 id="typing-text">Ayub Hussein Ali</h1>
+        <p class="hero-description">
+          Hi! I'm Ayub! I'm passionate about building user-centered products and
+          solving real-world challenges. I'm currently seeking internship
+          opportunities to grow my skills, gain hands-on experience, and
+          contribute to impactful projects. 🚀
+        </p>
+        <div class="contact-info">
+          <p><i class="fas fa-envelope"></i> ayub2@ualberta.ca</p>
+        </div>
+        <div class="social-links">
+          <a
+            href="https://github.com/ayubhali"
+            class="social-link"
+            target="_blank"
+          >
+            <i class="fab fa-github"></i> GitHub
+          </a>
+          <a href="assets/Resume.pdf" class="resume-button" target="_blank">
+            <i class="fas fa-file-alt"></i> Resume
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <h2 class="section-title">Experience</h2>
+      <div class="experience-container">
+        <div class="experience-card">
+          <img src="assets/MENT.jpg" alt="MENT" class="experience-icon" />
+          <div class="experience-content">
+            <div class="experience-header">
+              <div>
+                <h3 class="experience-title">
+                  Web Development & Algorithm Intern
+                </h3>
+                <p class="experience-company">NENT</p>
+              </div>
+              <span class="experience-date">Sep 2024 - Nov 2024 • Remote</span>
+            </div>
+            <p class="experience-description">
+              • Built an AI-powered real-time transcription tool with OpenAI API
+              and AWS Amplify, reducing manual note-taking by 80%.<br />
+              • Enabled real-time streaming transcription with AWS Amplify,
+              improving conversation flow and collaboration.<br />
+              • Optimized backend performance by caching GraphQL responses,
+              cutting response times by 27%.
+            </p>
+          </div>
+        </div>
+
+        <div class="experience-card">
+          <img src="assets/Hiswai.jpg" alt="Hiswal" class="experience-icon" />
+          <div class="experience-content">
+            <div class="experience-header">
+              <div>
+                <h3 class="experience-title">Data Science Intern</h3>
+                <p class="experience-company">Hiswal</p>
+              </div>
+              <span class="experience-date">May 2024 - Aug 2024 • Remote</span>
+            </div>
+            <p class="experience-description">
+              • Analyzed user retention trends using SQL and Python, tracking
+              50,000+ users to boost returning users by 15%.<br />
+              • Conducted behavioral analysis revealing 22% higher retention
+              rate for organic users.<br />
+              • Optimized website navigation and search algorithms, increasing
+              user retention by 12%.
+            </p>
+          </div>
+        </div>
+
+        <div class="experience-card">
+          <img
+            src="assets/M2MTech.jpg"
+            alt="M2M Tech"
+            class="experience-icon"
+          />
+          <div class="experience-content">
+            <div class="experience-header">
+              <div>
+                <h3 class="experience-title">
+                  Machine Learning & Data Science Intern
+                </h3>
+                <p class="experience-company">M2M Tech</p>
+              </div>
+              <span class="experience-date">May 2023 - Aug 2023 • Remote</span>
+            </div>
+            <p class="experience-description">
+              • Developed predictive models using TensorFlow and scikit-learn,
+              achieving 92% accuracy in user behavior prediction.<br />
+              • Implemented data pipeline automation, reducing processing time
+              by 40% through efficient ETL processes.<br />
+              • Created interactive dashboards using Python and Streamlit,
+              improving data visualization for stakeholders.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <img
+            src="assets/PickMeProject.png"
+            alt="PickMe Project"
+            class="project-image"
+          />
+          <div class="project-content">
+            <h3>PickMe</h3>
+            <p>
+              An Android application that simplifies event registration with a
+              lottery-based system.
+            </p>
+            <div class="tech-stack">
+              <img
+                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg"
+                alt="Java"
+              />
+              <img
+                src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg"
+                alt="Firebase"
+              />
+              <img
+                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/android/android-original.svg"
+                alt="Android"
+              />
+            </div>
+          </div>
+          <div class="project-overlay">
+            <div class="project-links">
+              <a href="#" class="project-link"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+              <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img
+            src="assets/NutriSmartProject.PNG"
+            alt="NutriSmart Project"
+            class="project-image"
+          />
+          <div class="project-content">
+            <h3>NutriSmart</h3>
+            <p>AI-powered food delivery app with personalized meal planning.</p>
+            <div class="tech-stack">
+              <img
+                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg"
+                alt="HTML5"
+              />
+              <img
+                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg"
+                alt="CSS3"
+              />
+              <img
+                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
+                alt="JavaScript"
+              />
+            </div>
+          </div>
+          <div class="project-overlay">
+            <div class="project-links">
+              <a href="#" class="project-link"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+              <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+      <div class="section-header">
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-subtitle">
+          I'm currently looking for internship opportunities! Feel free to reach
+          out if you'd like to connect or discuss potential opportunities.
+        </p>
+      </div>
+
+      <div class="contact-container">
+        <form id="contact-form" class="contact-form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              placeholder="Enter your name"
+              autocomplete="name"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="Enter your email"
+              autocomplete="email"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input
+              type="text"
+              id="subject"
+              name="subject"
+              required
+              placeholder="What's this about?"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              required
+              placeholder="Your message here..."
+              rows="5"
+            ></textarea>
+          </div>
+
+          <button type="submit" class="submit-button">
+            <i class="fas fa-paper-plane"></i>
+            Send Message
+          </button>
+        </form>
       </div>
     </section>
 
