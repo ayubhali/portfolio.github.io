@@ -167,8 +167,8 @@ document.addEventListener("DOMContentLoaded", () => {
       image: "assets/PickMeProject.png",
       techStack: ["Java", "Firebase", "Android"],
       links: {
-        live: "#",
-        github: "#",
+        live: "https://github.com/CMPUT301F24throat/throat-events/wiki",
+        github: "https://github.com/CMPUT301F24throat/throat-events",
       },
     },
     {
@@ -178,8 +178,19 @@ document.addEventListener("DOMContentLoaded", () => {
       image: "assets/NutriSmartProject.PNG",
       techStack: ["HTML5", "CSS3", "JavaScript"],
       links: {
+        live: "https://nutrismart-ayub.netlify.app/",
+        github: "https://github.com/ayubhali/NutriSmart.git",
+      },
+    },
+    {
+      title: "Blogger",
+      description:
+        "A full-stack blog application with admin dashboard for managing content.",
+      image: "assets/Blogger.png",
+      techStack: ["nextjs", "mongodb", "tailwindcss", "react"],
+      links: {
         live: "#",
-        github: "#",
+        github: "https://github.com/ayubhali/next-blog-app.git",
       },
     },
   ];
@@ -330,31 +341,31 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Contact Form Handling
   function setupContactForm() {
-    const form = document.querySelector('.contact-form');
-    
-    form.addEventListener('submit', async (e) => {
+    const form = document.querySelector(".contact-form");
+
+    form.addEventListener("submit", async (e) => {
       e.preventDefault();
-      
+
       // Simulate form submission (replace with actual form submission)
-      await new Promise(resolve => setTimeout(resolve, 500));
-      
+      await new Promise((resolve) => setTimeout(resolve, 500));
+
       // Show success message
-      const successPopup = document.createElement('div');
-      successPopup.classList.add('success-popup');
+      const successPopup = document.createElement("div");
+      successPopup.classList.add("success-popup");
       successPopup.innerHTML = `
         <i class="fas fa-check-circle"></i>
         <p>Message sent successfully!</p>
       `;
       document.body.appendChild(successPopup);
-      
+
       // Show popup
-      successPopup.classList.add('show');
-      
+      successPopup.classList.add("show");
+
       // Remove popup after delay
       setTimeout(() => {
         successPopup.remove();
       }, 3000);
-      
+
       // Reset form
       form.reset();
     });
@@ -385,6 +396,15 @@ document.addEventListener("DOMContentLoaded", () => {
         techStack: ["html5", "css3", "javascript"],
         github: "https://github.com/ayubhali/nutrismart",
         demo: "https://nutrismart-demo.vercel.app",
+      },
+      {
+        name: "Blogger",
+        description:
+          "A full-stack blog application with admin dashboard for managing content.",
+        image: "assets/Blogger.png",
+        techStack: ["nextjs", "mongodb", "tailwindcss", "react"],
+        github: "https://github.com/ayubhali/next-blog-app.git",
+        demo: "#",
       },
     ];
 

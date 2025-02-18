@@ -169,7 +169,7 @@
       </div>
 
       <div class="contact-container">
-        <form id="contact-form" class="contact-form">
+        <form id="contact-form" class="contact-form" action="https://formspree.io/f/xldgozpy" method="POST">
           <div class="form-group">
             <label for="name">Name</label>
             <input
@@ -201,7 +201,7 @@
               id="subject"
               name="subject"
               required
-              placeholder="What's this about?"
+              placeholder="Enter subject"
             />
           </div>
 
@@ -211,19 +211,19 @@
               id="message"
               name="message"
               required
-              placeholder="Your message here..."
+              placeholder="Enter your message"
               rows="5"
             ></textarea>
           </div>
 
-          <button type="submit" class="submit-button">
-            <i class="fas fa-paper-plane"></i>
-            Send Message
+          <button type="submit" class="submit-btn">
+            <i class="fas fa-paper-plane"></i> Send Message
           </button>
         </form>
       </div>
     </section>
 
     <script src="script.js"></script>
+    <script src="js/contact.js"></script>
   </body>
 </html>
