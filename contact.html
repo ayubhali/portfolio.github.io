@@ -4,13 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact - Ayub Hussein Ali</title>
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
-      <div class="logo"><a href="index.html">AA</a></div>
+      <div class="logo">
+        <a href="index.html">
+          <img src="assets/logo.svg" alt="AH" class="logo-svg" />
+        </a>
+      </div>
       <nav>
         <ul>
           <li><a href="about.html">About</a></li>
@@ -24,24 +35,48 @@
       <h2 class="section-title">Get In Touch</h2>
       <div class="contact-section">
         <p class="contact-description">
-          I'm currently looking for internship opportunities! Feel free to reach out if you'd like to connect or discuss potential opportunities.
+          I'm currently looking for internship opportunities! Feel free to reach
+          out if you'd like to connect or discuss potential opportunities.
         </p>
         <form id="contact-form" class="contact-form">
           <div class="form-group">
             <label for="name">Name</label>
-            <input type="text" id="name" name="name" required placeholder="Your name">
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              placeholder="Your name"
+            />
           </div>
           <div class="form-group">
             <label for="email">Email</label>
-            <input type="email" id="email" name="email" required placeholder="Your email">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="Your email"
+            />
           </div>
           <div class="form-group">
             <label for="subject">Subject</label>
-            <input type="text" id="subject" name="subject" required placeholder="Subject">
+            <input
+              type="text"
+              id="subject"
+              name="subject"
+              required
+              placeholder="Subject"
+            />
           </div>
           <div class="form-group">
             <label for="message">Message</label>
-            <textarea id="message" name="message" required placeholder="Your message"></textarea>
+            <textarea
+              id="message"
+              name="message"
+              required
+              placeholder="Your message"
+            ></textarea>
           </div>
           <button type="submit" class="submit-button">Send Message</button>
         </form>

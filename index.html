@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ayub Hussein Ali - Portfolio</title>
+    <title>Ayub Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
@@ -17,7 +17,9 @@
   <body>
     <header>
       <div class="logo">
-        <a href="#home">AHA</a>
+        <a href="#home">
+          <img src="assets/logo.svg" alt="AH" class="logo-svg" />
+        </a>
       </div>
       <nav>
         <ul>
@@ -33,13 +35,13 @@
       <div class="hero">
         <h1 id="typing-text">Ayub Hussein Ali</h1>
         <p class="hero-description">
-          Hi! I'm Ayub! I'm passionate about building user-centered products and
-          solving real-world challenges. I'm currently seeking internship
-          opportunities to grow my skills, gain hands-on experience, and
-          contribute to impactful projects. 🚀
+          I'm a passionate aspiring Full-Stack Developer and a 3rd year Computer
+          Science student at the University of Alberta. Currently seeking
+          internship opportunities for Summer 2025 to grow my skills and make
+          meaningful contributions to innovative projects 🌱
         </p>
         <div class="contact-info">
-          <p><i class="fas fa-envelope"></i> ayub2@ualberta.ca</p>
+          <p><i class="fas fa-envelope"></i> ayubhali.dev@gmail.com</p>
         </div>
         <div class="social-links">
           <a
@@ -48,6 +50,13 @@
             target="_blank"
           >
             <i class="fab fa-github"></i> GitHub
+          </a>
+          <a
+            href="https://www.linkedin.com/in/ayub-hussein-ali-852768237/"
+            class="social-link"
+            target="_blank"
+          >
+            <i class="fab fa-linkedin"></i> LinkedIn
           </a>
           <a href="assets/Resume.pdf" class="resume-button" target="_blank">
             <i class="fas fa-file-alt"></i> Resume
@@ -134,77 +143,19 @@
 
     <section id="projects">
       <h2 class="section-title">Projects</h2>
-      <div class="projects-grid">
-        <div class="project-card">
-          <img
-            src="assets/PickMeProject.png"
-            alt="PickMe Project"
-            class="project-image"
-          />
-          <div class="project-content">
-            <h3>PickMe</h3>
-            <p>
-              An Android application that simplifies event registration with a
-              lottery-based system.
-            </p>
-            <div class="tech-stack">
-              <img
-                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg"
-                alt="Java"
-              />
-              <img
-                src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg"
-                alt="Firebase"
-              />
-              <img
-                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/android/android-original.svg"
-                alt="Android"
-              />
-            </div>
-          </div>
-          <div class="project-overlay">
-            <div class="project-links">
-              <a href="#" class="project-link"
-                ><i class="fas fa-external-link-alt"></i
-              ></a>
-              <a href="#" class="project-link"><i class="fab fa-github"></i></a>
-            </div>
+      <div class="projects-slider">
+        <button class="slider-btn prev-btn" aria-label="Previous project">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <div class="projects-container">
+          <div class="projects-track">
+            <!-- Projects will be placed here by JavaScript -->
           </div>
         </div>
-
-        <div class="project-card">
-          <img
-            src="assets/NutriSmartProject.PNG"
-            alt="NutriSmart Project"
-            class="project-image"
-          />
-          <div class="project-content">
-            <h3>NutriSmart</h3>
-            <p>AI-powered food delivery app with personalized meal planning.</p>
-            <div class="tech-stack">
-              <img
-                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg"
-                alt="HTML5"
-              />
-              <img
-                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg"
-                alt="CSS3"
-              />
-              <img
-                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
-                alt="JavaScript"
-              />
-            </div>
-          </div>
-          <div class="project-overlay">
-            <div class="project-links">
-              <a href="#" class="project-link"
-                ><i class="fas fa-external-link-alt"></i
-              ></a>
-              <a href="#" class="project-link"><i class="fab fa-github"></i></a>
-            </div>
-          </div>
-        </div>
+        <button class="slider-btn next-btn" aria-label="Next project">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+        <div class="slider-dots"></div>
       </div>
     </section>
 
