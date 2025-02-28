@@ -3,22 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ayub Portfolio</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>Ayub Ali - Portfolio</title>
+    <link rel="icon" type="image/jpeg" href="assets/AHlogo.jpg">
+    <link rel="stylesheet" href="css/styles.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
   </head>
   <body>
     <header>
       <div class="logo">
         <a href="#home">
-          <img src="assets/logo.svg" alt="AH" class="logo-svg" />
+          <img src="assets/AHlogo.jpg" alt="AH Logo" class="logo-img" />
         </a>
       </div>
       <nav>
@@ -33,109 +31,95 @@
 
     <section id="home">
       <div class="hero">
-        <h1 id="typing-text">Ayub Hussein Ali</h1>
-        <p class="hero-description">
-          I'm a passionate aspiring Full-Stack Developer and a 3rd year Computer
-          Science student at the University of Alberta. Currently seeking
-          internship opportunities for Summer 2025 to grow my skills and make
-          meaningful contributions to innovative projects 🌱
-        </p>
-        <div class="contact-info">
-          <p><i class="fas fa-envelope"></i> ayubhali.dev@gmail.com</p>
-        </div>
-        <div class="social-links">
-          <a
-            href="https://github.com/ayubhali"
-            class="social-link"
-            target="_blank"
-          >
-            <i class="fab fa-github"></i> GitHub
-          </a>
-          <a
-            href="https://www.linkedin.com/in/ayub-hussein-ali-852768237/"
-            class="social-link"
-            target="_blank"
-          >
-            <i class="fab fa-linkedin"></i> LinkedIn
-          </a>
-          <a href="assets/Resume.pdf" class="resume-button" target="_blank">
-            <i class="fas fa-file-alt"></i> Resume
-          </a>
+        <div class="hero-content">
+          <h1 id="typing-text"></h1>
+          <p class="hero-description">
+            I'm a passionate aspiring Full-Stack Developer and a 3rd year Computer
+            Science student at the University of Alberta. Currently seeking
+            internship opportunities for Summer 2025 to grow my skills and make
+            meaningful contributions to innovative projects 🌱
+          </p>
+          <div class="contact-info">
+            <p><i class="fas fa-envelope"></i> ayubhali.dev@gmail.com</p>
+          </div>
+          <div class="social-links">
+            <a href="https://github.com/ayubhali" target="_blank" class="social-link">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+            <a href="https://linkedin.com/in/ayubhali" target="_blank" class="social-link">
+              <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+            <a href="assets/Resume.pdf" target="_blank" class="social-link">
+              <i class="fas fa-file-alt"></i> Resume
+            </a>
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="experience">
+    <section id="experience" class="experience-section">
       <h2 class="section-title">Experience</h2>
       <div class="experience-container">
         <div class="experience-card">
-          <img src="assets/MENT.jpg" alt="MENT" class="experience-icon" />
+          <div class="experience-logo">
+            <img src="assets/MENT.jpg" alt="MENT Logo">
+          </div>
           <div class="experience-content">
-            <div class="experience-header">
-              <div>
-                <h3 class="experience-title">
-                  Web Development & Algorithm Intern
-                </h3>
-                <p class="experience-company">NENT</p>
-              </div>
-              <span class="experience-date">Sep 2024 - Nov 2024 • Remote</span>
+            <h3>Web Development & Algorithm Intern</h3>
+            <div class="company">MENT</div>
+            <div class="duration">Sep 2024 - Nov 2024 • Remote</div>
+            <div class="description">
+              • Built an AI-powered real-time transcription tool with OpenAI API and AWS Amplify, reducing manual note-taking by 80%.<br>
+              • Enabled real-time streaming transcription with AWS Amplify, improving conversation flow and collaboration.<br>
+              • Optimized backend performance by caching GraphQL responses, cutting response times by 27%.
             </div>
-            <p class="experience-description">
-              • Built an AI-powered real-time transcription tool with OpenAI API
-              and AWS Amplify, reducing manual note-taking by 80%.<br />
-              • Enabled real-time streaming transcription with AWS Amplify,
-              improving conversation flow and collaboration.<br />
-              • Optimized backend performance by caching GraphQL responses,
-              cutting response times by 27%.
-            </p>
+            <div class="tech-list">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">AWS</span>
+              <span class="tech-tag">OpenAI</span>
+            </div>
           </div>
         </div>
 
         <div class="experience-card">
-          <img src="assets/Hiswai.jpg" alt="Hiswal" class="experience-icon" />
+          <div class="experience-logo">
+            <img src="assets/Hiswai.jpg" alt="Hiswai Logo">
+          </div>
           <div class="experience-content">
-            <div class="experience-header">
-              <div>
-                <h3 class="experience-title">Data Science Intern</h3>
-                <p class="experience-company">Hiswal</p>
-              </div>
-              <span class="experience-date">May 2024 - Aug 2024 • Remote</span>
+            <h3>Data Science Intern</h3>
+            <div class="company">Hiswai</div>
+            <div class="duration">May 2024 - Aug 2024 • Remote</div>
+            <div class="description">
+              • Analyzed user retention trends using SQL and Python, tracking 50,000+ users to boost returning users by 15%.<br>
+              • Conducted behavioral analysis revealing 22% higher retention rate for organic users.<br>
+              • Optimized website navigation and search algorithms, increasing user retention by 12%.
             </div>
-            <p class="experience-description">
-              • Analyzed user retention trends using SQL and Python, tracking
-              50,000+ users to boost returning users by 15%.<br />
-              • Conducted behavioral analysis revealing 22% higher retention
-              rate for organic users.<br />
-              • Optimized website navigation and search algorithms, increasing
-              user retention by 12%.
-            </p>
+            <div class="tech-list">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">SQL</span>
+              <span class="tech-tag">Data Analysis</span>
+            </div>
           </div>
         </div>
 
         <div class="experience-card">
-          <img
-            src="assets/M2MTech.jpg"
-            alt="M2M Tech"
-            class="experience-icon"
-          />
+          <div class="experience-logo">
+            <img src="assets/M2M.jpg" alt="M2M Tech Logo">
+          </div>
           <div class="experience-content">
-            <div class="experience-header">
-              <div>
-                <h3 class="experience-title">
-                  Machine Learning & Data Science Intern
-                </h3>
-                <p class="experience-company">M2M Tech</p>
-              </div>
-              <span class="experience-date">May 2023 - Aug 2023 • Remote</span>
+            <h3>Machine Learning & Data Science Intern</h3>
+            <div class="company">M2M Tech</div>
+            <div class="duration">May 2023 - Aug 2023 • Remote</div>
+            <div class="description">
+              • Developed predictive models using TensorFlow and scikit-learn, achieving 92% accuracy in user behavior prediction.<br>
+              • Implemented data pipeline automation, reducing processing time by 40% through efficient ETL processes.<br>
+              • Created interactive dashboards using Python and Streamlit, improving data visualization for stakeholders.
             </div>
-            <p class="experience-description">
-              • Developed predictive models using TensorFlow and scikit-learn,
-              achieving 92% accuracy in user behavior prediction.<br />
-              • Implemented data pipeline automation, reducing processing time
-              by 40% through efficient ETL processes.<br />
-              • Created interactive dashboards using Python and Streamlit,
-              improving data visualization for stakeholders.
-            </p>
+            <div class="tech-list">
+              <span class="tech-tag">TensorFlow</span>
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">ML</span>
+            </div>
           </div>
         </div>
       </div>
@@ -143,87 +127,122 @@
 
     <section id="projects">
       <h2 class="section-title">Projects</h2>
-      <div class="projects-slider">
-        <button class="slider-btn prev-btn" aria-label="Previous project">
-          <i class="fas fa-chevron-left"></i>
-        </button>
-        <div class="projects-container">
-          <div class="projects-track">
-            <!-- Projects will be placed here by JavaScript -->
+      <div class="projects-grid">
+        <!-- Project 1: Blogger -->
+        <div class="project-card">
+          <div class="project-image">
+            <img src="assets/Blogger.jpg" alt="Blogger Project">
+            <div class="project-overlay">
+              <a href="https://github.com/ayubhali/next-blog-app" target="_blank" class="overlay-link">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://blogger-demo.vercel.app" target="_blank" class="overlay-link">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>Blogger</h3>
+            <p>A full-stack blog application with admin dashboard for managing content.</p>
+            <div class="tech-stack">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="Next.js" title="Next.js">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" title="MongoDB">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" alt="TailwindCSS" title="TailwindCSS">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" title="React">
+            </div>
           </div>
         </div>
-        <button class="slider-btn next-btn" aria-label="Next project">
-          <i class="fas fa-chevron-right"></i>
-        </button>
-        <div class="slider-dots"></div>
+
+        <!-- Project 2: PickMe -->
+        <div class="project-card">
+          <div class="project-image">
+            <img src="assets/PickMe.jpg" alt="PickMe Project">
+            <div class="project-overlay">
+              <a href="https://github.com/ayubhali/pickme" target="_blank" class="overlay-link">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://pickme-demo.vercel.app" target="_blank" class="overlay-link">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>PickMe</h3>
+            <p>An Android application that simplifies event registration with a lottery-based system.</p>
+            <div class="tech-stack">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" title="Java">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" alt="Firebase" title="Firebase">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg" alt="Android" title="Android">
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: NutriSmart -->
+        <div class="project-card">
+          <div class="project-image">
+            <img src="assets/NutriSmart.jpg" alt="NutriSmart Project">
+            <div class="project-overlay">
+              <a href="https://github.com/ayubhali/nutrismart" target="_blank" class="overlay-link">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://nutrismart-demo.vercel.app" target="_blank" class="overlay-link">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>NutriSmart</h3>
+            <p>AI-powered food delivery app with personalized meal planning.</p>
+            <div class="tech-stack">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" title="HTML5">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" title="CSS3">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" title="JavaScript">
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
     <section id="contact" class="contact-section">
-      <div class="section-header">
-        <h2 class="section-title">Get In Touch</h2>
-        <p class="section-subtitle">
-          I'm currently looking for internship opportunities! Feel free to reach
-          out if you'd like to connect or discuss potential opportunities.
-        </p>
-      </div>
-
+      <h2 class="section-title">Let's Get in Touch</h2>
       <div class="contact-container">
-        <form id="contact-form" class="contact-form" action="https://formspree.io/f/xldgozpy" method="POST">
-          <div class="form-group">
-            <label for="name">Name</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              required
-              placeholder="Enter your name"
-              autocomplete="name"
-            />
-          </div>
+        <div class="contact-content">
+          <p class="contact-message">
+            Thank you for your interest in getting in touch with me. I'm currently seeking
+            internship opportunities and would love to connect! You can reach me directly at:
+          </p>
+          
+          <a href="mailto:ayubhali.dev@gmail.com" class="email-link">
+            <i class="fas fa-envelope"></i>
+            ayubhali.dev@gmail.com
+          </a>
 
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              required
-              placeholder="Enter your email"
-              autocomplete="email"
-            />
-          </div>
+          <p class="contact-message">
+            I make an effort to respond to all messages within 24 hours. Feel free to
+            connect with me on social media as well:
+          </p>
 
-          <div class="form-group">
-            <label for="subject">Subject</label>
-            <input
-              type="text"
-              id="subject"
-              name="subject"
-              required
-              placeholder="Enter subject"
-            />
+          <div class="social-links">
+            <a href="https://github.com/ayubhali" target="_blank" class="social-link">
+              <i class="fab fa-github"></i>
+              <span>GitHub</span>
+            </a>
+            <a href="https://linkedin.com/in/ayubhali" target="_blank" class="social-link">
+              <i class="fab fa-linkedin"></i>
+              <span>LinkedIn</span>
+            </a>
           </div>
-
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea
-              id="message"
-              name="message"
-              required
-              placeholder="Enter your message"
-              rows="5"
-            ></textarea>
-          </div>
-
-          <button type="submit" class="submit-btn">
-            <i class="fas fa-paper-plane"></i> Send Message
-          </button>
-        </form>
+        </div>
       </div>
     </section>
 
-    <script src="script.js"></script>
-    <script src="js/contact.js"></script>
+    <footer class="footer">
+      <div class="footer-content">
+        <p>&copy; 2024 Ayub Hussein Ali. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/your-font-awesome-kit.js"></script>
+    <script type="module" src="js/main.js"></script>
   </body>
 </html>
