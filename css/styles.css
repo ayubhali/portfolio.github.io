@@ -118,16 +118,37 @@ nav a.active::after {
   margin-bottom: 2rem;
   min-height: 4rem;
   font-weight: bold;
+  position: relative;
+  white-space: nowrap;
+  display: inline-block;
+}
+
+.cursor {
+  display: inline-block;
+  width: 3px;
+  height: 80%;
+  background: #fff;
+  margin-left: 2px;
+  animation: cursor-blink 0.8s ease infinite;
+  position: relative;
+  top: 10%;
+}
+
+@keyframes cursor-blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
 }
 
 #typing-text::after {
-  content: '|';
-  animation: blink 1s infinite;
+  display: none;
 }
 
-@keyframes blink {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0; }
+#typing-text span {
+  display: inline-block;
 }
 
 .arabic-text {
@@ -405,8 +426,21 @@ section {
   transition: transform 0.5s ease;
 }
 
+.project-card:nth-child(1) .project-image img {
+  transform: scale(1.2);
+}
+
+.project-card:nth-child(3) .project-image img {
+  transform: scale(1.2);
+}
+
 .project-card:hover .project-image img {
-  transform: scale(1.05);
+  transform: scale(1.25);
+}
+
+.project-card:nth-child(1):hover .project-image img,
+.project-card:nth-child(3):hover .project-image img {
+  transform: scale(1.3);
 }
 
 .project-overlay {
