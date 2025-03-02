@@ -465,14 +465,33 @@ section {
   align-items: center;
 }
 
+.tech-stack i {
+  font-size: 1.5rem;
+  margin: 0 0.5rem;
+  transition: var(--transition);
+}
+
+.tech-stack .fa-react {
+  color: #61DAFB;
+}
+
+.tech-stack .fa-database {
+  color: #4DB33D;
+}
+
+.tech-stack .fa-css3-alt {
+  color: #2965f1;
+}
+
 .tech-stack img {
   width: 24px;
   height: 24px;
-  transition: transform 0.3s ease;
+  margin: 0 0.5rem;
+  transition: var(--transition);
 }
 
 .tech-stack img:hover {
-  transform: translateY(-2px);
+  transform: scale(1.1);
 }
 
 @media (max-width: 1024px) {
